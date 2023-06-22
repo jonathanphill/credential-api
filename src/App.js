@@ -7,7 +7,8 @@ const App = () => {
     const url = new URL("https://www.rijksmuseum.nl/api/en/collection/");
     // Adding the param values to our url
     url.search = new URLSearchParams({
-      key: process.env.REACT_APP_API_KEY
+      // key: "EwHK4Ed8",
+      key:process.env.REACT_APP_API_KEY,
     });
     // Using the fetch function to get the information
     fetch(url)
